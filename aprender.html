@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>aprender</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Formulário de emprego!</h1>
+    <img
+    src="https://logos-world.net/wp-content/uploads/2023/01/Bang-Bros-Logo.png"
+    width="200"
+    height="200">
+    <!--Para fazermos um formulário usamos <form> e dentro dele colocamos o input
+    onde será coletado os dados que o usuário inserir, podemos usar o input
+    de tipo texto para pegar nomes, password para colocar senhas,label define coloca uma legenda para a escolha
+    e também posso definir um ID unico de identificação para um input usando id=""
+    e no primeiro label com <label for="">-->
+
+    <form>
+      <label for="Campo_Nome">Nome:</label>
+      <input type="text" placeholder="Nome" id="Campo_Nome" required>
+      <br>
+      <br>
+      <label for="Campo_Sobrenome">Sobrenome:</label>
+      <input type="text" placeholder="Sobrenome" id="Campo_Sobrenome" required>
+      <br>
+      <br>
+      <label for="Campo_Senha">Coloque sua senha:</label>
+      <input type="password" placeholder="Senha" id="Campo_Senha" required>
+      <!--O type password, tudo que for digitado dentro do placeholder
+      sera omitido-->
+      <br>
+      <br>
+      <label for="Campo_Email">Email:</label>
+      <input type="email" placeholder="Email de contato" id="Campo_Email" required>
+      <!--Vai aceitar apenas emails-->
+      <!--O required é um metodo para que seja obrigatorio preencher esta parte-->
+      <br>
+      <br>
+      <h2>Escolha sabiamente</h2>
+      <label for="mia">Mia Kalhifa</label>
+      <input type="radio" name="Ator" value="Mia Kalhifa" id="mia">
+      <!--O name do radio deve ser o mesmo para todos-->
+      <br>
+      <br>
+      <label for="lana">Lana Rhoades</label>
+      <input type="radio" name="Ator" value="Lana Rhoades" id="lana">
+      <br>
+      <br>
+      <h2>Escolha seu site favorito:</h2>
+      <select name="Atrizes">
+        <option selected disabled value="Escolha_Atriz">Escolha sua atriz</option>
+        <option value="Pornhub">Pornhub</option>
+        <option value="Xvideos">Xvideos</option>
+      </select>
+      <br>
+      <br>
+      <h2>Descreva suas qualidades como ator/atriz:</h2>
+      <textarea placeholder="Digite aqui" rows="15" cols="65">Escreva suas qualidades como atriz/ator</textarea>
+      <!--Rows é o numero de linhas que a area de texto terá-->
+      <!--cols é o numero de colunas que terá-->
+      <hr>
+      <input type="submit" value="Enviar formulário">
+      <!--Extra, você pode usar o type checkbox para fazer multiplas escolhas-->
+
+
+
+
+    </form>
+
+  
+  </body>
+</html>
